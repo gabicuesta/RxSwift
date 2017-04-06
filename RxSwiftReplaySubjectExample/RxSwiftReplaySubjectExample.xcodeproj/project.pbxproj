@@ -12,6 +12,7 @@
 		8CDEFBB11E964A1A00FEADF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEFBAF1E964A1A00FEADF0 /* Main.storyboard */; };
 		8CDEFBB31E964A1A00FEADF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEFBB21E964A1A00FEADF0 /* Assets.xcassets */; };
 		8CDEFBB61E964A1A00FEADF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEFBB41E964A1A00FEADF0 /* LaunchScreen.storyboard */; };
+		C9F7CCC81B943C59535BCFE7 /* Pods_RxSwiftReplaySubjectExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69759D356FC93CEC664F061 /* Pods_RxSwiftReplaySubjectExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		8CDEFBB21E964A1A00FEADF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDEFBB51E964A1A00FEADF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CDEFBB71E964A1A00FEADF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69759D356FC93CEC664F061 /* Pods_RxSwiftReplaySubjectExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftReplaySubjectExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1528FF63552FB5179CFAC0 /* Pods-RxSwiftReplaySubjectExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftReplaySubjectExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftReplaySubjectExample/Pods-RxSwiftReplaySubjectExample.release.xcconfig"; sourceTree = "<group>"; };
+		F9E1FF066C0784F83EFA131C /* Pods-RxSwiftReplaySubjectExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftReplaySubjectExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftReplaySubjectExample/Pods-RxSwiftReplaySubjectExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F7CCC81B943C59535BCFE7 /* Pods_RxSwiftReplaySubjectExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35804B592B2A72A4901D9292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69759D356FC93CEC664F061 /* Pods_RxSwiftReplaySubjectExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CDEFB9F1E964A1A00FEADF0 = {
 			isa = PBXGroup;
 			children = (
 				8CDEFBAA1E964A1A00FEADF0 /* RxSwiftReplaySubjectExample */,
 				8CDEFBA91E964A1A00FEADF0 /* Products */,
+				8DB22610954575A1A0BC829E /* Pods */,
+				35804B592B2A72A4901D9292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = RxSwiftReplaySubjectExample;
 			sourceTree = "<group>";
 		};
+		8DB22610954575A1A0BC829E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1FF066C0784F83EFA131C /* Pods-RxSwiftReplaySubjectExample.debug.xcconfig */,
+				DD1528FF63552FB5179CFAC0 /* Pods-RxSwiftReplaySubjectExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CDEFBBA1E964A1A00FEADF0 /* Build configuration list for PBXNativeTarget "RxSwiftReplaySubjectExample" */;
 			buildPhases = (
+				591BB2382844082DF338DE97 /* [CP] Check Pods Manifest.lock */,
 				8CDEFBA41E964A1A00FEADF0 /* Sources */,
 				8CDEFBA51E964A1A00FEADF0 /* Frameworks */,
 				8CDEFBA61E964A1A00FEADF0 /* Resources */,
+				DD8441664A8CFD33E2748F83 /* [CP] Embed Pods Frameworks */,
+				90C46FADD87D8FB210187865 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		591BB2382844082DF338DE97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90C46FADD87D8FB210187865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftReplaySubjectExample/Pods-RxSwiftReplaySubjectExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8441664A8CFD33E2748F83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftReplaySubjectExample/Pods-RxSwiftReplaySubjectExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CDEFBA41E964A1A00FEADF0 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		8CDEFBBB1E964A1A00FEADF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E1FF066C0784F83EFA131C /* Pods-RxSwiftReplaySubjectExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BG7EB8E7NF;
@@ -272,6 +348,7 @@
 		};
 		8CDEFBBC1E964A1A00FEADF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1528FF63552FB5179CFAC0 /* Pods-RxSwiftReplaySubjectExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BG7EB8E7NF;
